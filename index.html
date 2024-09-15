@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script>
+
+    function BTN() {
+      const currentvalue = document.getElementById("btn").innerHTML;
+      const currentCounter = currentvalue.split(" ")[1]
+      const newcounter = parseInt(currentCounter) + 1;
+      document.getElementById("btn").innerHTML = "Counter " +  newcounter   }
+  </script>
+<body>
+  <button onclick= "BTN()" id="btn">Counter 0</button>
+</body>
+</html>
