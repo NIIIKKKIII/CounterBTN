@@ -9,10 +9,11 @@
 <script>
 
     function BTN() {
-      const currentvalue = document.getElementById("btn").innerHTML;
-      const currentCounter = currentvalue.split(" ")[1]
-      const newcounter = parseInt(currentCounter) + 1;
-      document.getElementById("btn").innerHTML = "Counter " +  newcounter   }
+      const currentvalue = document.getElementById("btn").innerHTML;  // gets the initial state of the button
+      const currentCounter = currentvalue.split(" ")[1]    // makes the digit on the button as the value that needs to be changed
+      const newcounter = parseInt(currentCounter) + 1;  // parses the string as an integer and adds one to it
+      document.getElementById("btn").innerHTML = "Counter " +  newcounter  // Notice there is a space after Counter so as to properly make the change at the right area 
+ } 
   </script>
 <body>
   <button onclick= "BTN()" id="btn">Counter 0</button>
